@@ -34,9 +34,9 @@ namespace Linked_List
             return false;
         }
 
-        public void Print(Node head)
+        public void Print()
         {
-            Current = head;
+            Current = Head;
             while (Current.Next != null)
             {
                 Console.WriteLine(Current.Value);
