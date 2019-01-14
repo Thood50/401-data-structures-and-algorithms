@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Linked_List
 {
-    class LinkedList
+    public class LinkedList
     {
         public Node Head { get; set; }
         public Node Current { get; set; }
@@ -34,9 +34,9 @@ namespace Linked_List
             return false;
         }
 
-        public void Print(Node head)
+        public void Print()
         {
-            Current = head;
+            Current = Head;
             while (Current.Next != null)
             {
                 Console.WriteLine(Current.Value);

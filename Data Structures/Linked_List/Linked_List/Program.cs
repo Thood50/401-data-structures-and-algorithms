@@ -16,6 +16,9 @@ namespace Linked_List
             list.Insert(4);
             list.Insert(8);
             list.Insert(16);
+            list.Print();
+            Console.ReadLine();
+            Environment.Exit(1);
         }
     }
 }
