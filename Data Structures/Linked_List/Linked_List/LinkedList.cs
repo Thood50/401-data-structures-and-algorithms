@@ -39,10 +39,11 @@ namespace Linked_List
             Current = Head;
             while (Current.Next != null)
             {
-                Console.WriteLine(Current.Value);
+                Console.Write($"{Current.Value} => ");
                 Current = Current.Next;
             }
-            Console.WriteLine(Current.Value);
+            Console.WriteLine($"{Current.Value} => null");
+            
         }
 
         public void Append(int value)
@@ -65,7 +66,7 @@ namespace Linked_List
                 return;
             }
             while (Current.Next != null)
-            {
+            {                
                 if (Current.Next.Value == value)
                 {
                     Node node = new Node(newValue);
@@ -73,8 +74,40 @@ namespace Linked_List
                     Current.Next = node;
                     return;
                 }
+                Current = Current.Next;
             }
-            Current = Current.Next;
+            
         }
+
+        public void InsertAfter(int value, int newValue)
+        {
+            Current = Head;
+            if (Current.Value == value)
+            {
+                Node node = new Node(newValue);
+                node.Next = Current.Next;
+                Current.Next = node;
+                return;
+            }
+            while (Current.Next != null)
+            {
+                if (Current.Value == value)
+                {
+                    Node node = new Node(newValue);
+                    node.Next = Current.Next;
+                    Current.Next = node;
+                    return;
+                }
+                Current = Current.Next;
+            }
+            if (Current.Value == value)
+            {
+                Node node = new Node(newValue);
+                node.Next = Current.Next;
+                Current.Next = node;
+                return;
+            }
+        }
+
     }
 }
