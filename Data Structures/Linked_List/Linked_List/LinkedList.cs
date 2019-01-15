@@ -44,5 +44,18 @@ namespace Linked_List
             }
             Console.WriteLine(Current.Value);
         }
+
+        public void Append(int value)
+        {
+            Current = Head;
+            while (Current.Next!= null)
+            {
+                Current = Current.Next;
+            }
+            Node node = new Node(value);
+            Current.Next = node;
+        }
+
+
     }
 }
