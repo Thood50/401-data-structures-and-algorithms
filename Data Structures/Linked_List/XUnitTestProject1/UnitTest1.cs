@@ -36,6 +36,54 @@ namespace XUnitTestProject1
             Assert.False(isFalse);
         }
 
+        [Fact]
+        public void TestAppendSuccess()
+        {
+            LinkedList list = new LinkedList();
+            list.Insert(4);
+            list.Insert(8);
+            list.Insert(16);
+            list.Append(3);
+            bool isTrue = list.Includes(3);
+            Assert.True(isTrue);
+        }
+
+        [Fact]
+        public void TestAppendFail()
+        {
+            LinkedList list = new LinkedList();
+            list.Insert(4);
+            list.Insert(8);
+            list.Insert(16);
+            list.Append(3);
+            bool isFalse = list.Includes(10);
+            Assert.False(isFalse);
+        }
+
+        [Fact]
+        public void TestInsertBeforeSuccess()
+        {
+            LinkedList list = new LinkedList();
+            list.Insert(4);
+            list.Insert(8);
+            list.Insert(16);
+            list.InsertBefore(16, 3);
+            bool isTrue = list.Includes(3);
+            Assert.True(isTrue);
+        }
+
+        [Fact]
+        public void TestInsertAfterSuccess()
+        {
+            LinkedList list = new LinkedList();
+            list.Insert(4);
+            list.Insert(8);
+            list.Insert(16);
+            list.InsertAfter(16, 3);
+            bool isTrue = list.Includes(3);
+            Assert.True(isTrue);
+        }
+
 
 
 
