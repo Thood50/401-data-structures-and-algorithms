@@ -27,14 +27,7 @@ namespace Linked_List
             list.Print();
             list.InsertAfter(3, 30);
             list.InsertAfter(9, 90);
-            list.Print();
-            Console.WriteLine("-------------------");
-            Console.Write(list.Includes(16));
-            Console.Write(list.Includes(7));
-            Console.Write(list.Includes(20));
-            Console.WriteLine(list.Includes(30));
-            Console.WriteLine("-------------------------");
-            Console.Write(list.Includes(300));
+            list.Print();            
             Console.ReadLine();
 
         }

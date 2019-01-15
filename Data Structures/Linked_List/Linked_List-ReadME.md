@@ -11,6 +11,9 @@ This project displays the values of each node in a generated Linked list display
 -create a insert method that takes a value and adds it to the front of the LL  
 -create a includes method that checks a value agaisnt all values in the ll and returns true if found or false if not found  
 -create a print method that displays the values of all Nodes in the LL in the console  
+-create a append method which adds a new node witha given value to the end of the list  
+-create a insertBefore method which add a new node with the given value immediately before a given value  
+-create a insertAfter method which add a new node with the give value immedietely after a given value  
 
 
 <h2>Setup: </h2>
