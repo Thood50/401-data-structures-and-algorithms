@@ -56,6 +56,25 @@ namespace Linked_List
             Current.Next = node;
         }
 
-
+        public void InsertBefore(int value, int newValue)
+        {
+            Current = Head;
+            if (Current.Value == value)
+            {
+                Insert(newValue);
+                return;
+            }
+            while (Current.Next != null)
+            {
+                if (Current.Next.Value == value)
+                {
+                    Node node = new Node(newValue);
+                    node.Next = Current.Next;
+                    Current.Next = node;
+                    return;
+                }
+            }
+            Current = Current.Next;
+        }
     }
 }
