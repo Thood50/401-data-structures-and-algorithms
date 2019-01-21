@@ -16,6 +16,10 @@ namespace StackAndQueue.Classes
             Top = node;
         }
 
+        /// <summary>
+        /// Adds new node to top of stack
+        /// </summary>
+        /// <param name="value"></param>
         public void Push(int value)
         {
             Node node = new Node(value);
@@ -23,6 +27,10 @@ namespace StackAndQueue.Classes
             Top = node;
         }
 
+        /// <summary>
+        /// Removes top node from stack
+        /// </summary>
+        /// <returns>returns the node that was on top of stack</returns>
         public Node Pop()
         {
             Node temp = Top;
@@ -31,6 +39,10 @@ namespace StackAndQueue.Classes
             return temp;
         }
 
+        /// <summary>
+        /// Allows you to view top of stack
+        /// </summary>
+        /// <returns>returns the node at top of stack</returns>
         public Node Peek()
         {
             return Top;
