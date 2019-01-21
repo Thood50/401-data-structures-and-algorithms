@@ -9,6 +9,10 @@ namespace Linked_List
         public Node Head { get; set; }
         public Node Current { get; set; }
 
+        /// <summary>
+        /// creates a new node with the inputed value and addes it to the front of the LL
+        /// </summary>
+        /// <param name="value"></param>
         public void Insert(int value)
         {
             Node thing = new Node(value);
@@ -16,6 +20,11 @@ namespace Linked_List
             Head = thing;
         }
 
+        /// <summary>
+        /// Takes a value and iterates over checking if the LL has a node with that value
+        /// </summary>
+        /// <param name="value"></param>
+        /// <returns>returns true if value is found false if not</returns>
         public bool Includes(int value)
         {
             Current = Head;
@@ -34,6 +43,9 @@ namespace Linked_List
             return false;
         }
 
+        /// <summary>
+        /// Iterates over the linked list and prints the value of each node
+        /// </summary>
         public void Print()
         {
             Current = Head;
@@ -46,6 +58,10 @@ namespace Linked_List
             
         }
 
+        /// <summary>
+        /// Iterates over the LL and adds a new node with inputed value at the end of the LL
+        /// </summary>
+        /// <param name="value"></param>
         public void Append(int value)
         {
             Current = Head;
@@ -57,6 +73,11 @@ namespace Linked_List
             Current.Next = node;
         }
 
+        /// <summary>
+        /// Iterates over the LL and adds inputed newValue into a new node right before selected node value
+        /// </summary>
+        /// <param name="value"></param>
+        /// <param name="newValue"></param>
         public void InsertBefore(int value, int newValue)
         {
             Current = Head;
@@ -79,6 +100,11 @@ namespace Linked_List
             
         }
 
+        /// <summary>
+        /// Iterates over the LL and adds inputed newValue into a new node right after selected node value
+        /// </summary>
+        /// <param name="value"></param>
+        /// <param name="newValue"></param>
         public void InsertAfter(int value, int newValue)
         {
             Current = Head;
