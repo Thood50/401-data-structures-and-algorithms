@@ -9,6 +9,10 @@ namespace Linked_List
         public Node Head { get; set; }
         public Node Current { get; set; }
 
+        /// <summary>
+        /// Adds a new node to front of the Linked list
+        /// </summary>
+        /// <param name="value"></param>
         public void Insert(int value)
         {
             Node thing = new Node(value);
@@ -16,6 +20,11 @@ namespace Linked_List
             Head = thing;
         }
 
+        /// <summary>
+        /// Takes a value in and iterates over the linked list looking for this value
+        /// </summary>
+        /// <param name="value"></param>
+        /// <returns>returns true if found and false if not</returns>
         public bool Includes(int value)
         {
             Current = Head;
@@ -34,6 +43,9 @@ namespace Linked_List
             return false;
         }
 
+        /// <summary>
+        /// Iterates over the linked list and prints the value of each node
+        /// </summary>
         public void Print()
         {
             Current = Head;

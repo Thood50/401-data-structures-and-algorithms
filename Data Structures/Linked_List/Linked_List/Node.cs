@@ -11,6 +11,10 @@ namespace Linked_List
         
         public Node Next { get; set; }
 
+        /// <summary>
+        /// The constructor for the a Node
+        /// </summary>
+        /// <param name="value"></param>
         public Node (int value)
         {
             Value = value;

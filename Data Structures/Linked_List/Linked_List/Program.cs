@@ -10,6 +10,9 @@ namespace Linked_List
             MakeLL();
         }
 
+        /// <summary>
+        /// Just creates a linked list, adds nodes, and then exits after user input
+        /// </summary>
         public static void MakeLL()
         {
             LinkedList list = new LinkedList();
