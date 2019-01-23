@@ -11,6 +11,11 @@ namespace StackAndQueue.Classes
     {
         public Node Top { get; set; }
 
+        public Stack()
+        {
+            Top = null;
+        }
+
         public Stack(Node node)
         {
             Top = node;
