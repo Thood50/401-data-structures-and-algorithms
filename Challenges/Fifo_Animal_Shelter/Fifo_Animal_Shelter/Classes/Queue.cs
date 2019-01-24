@@ -10,6 +10,12 @@ namespace Fifo_Animal_Shelter.Classes
 
         public ShelterNode Rear { get; set; }
 
+        public Queue()
+        {
+            Front = null;
+            Rear = null;
+        }
+
         public Queue(ShelterNode node)
         {
             Front = node;
